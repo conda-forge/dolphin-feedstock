@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/opera-adt/dolphin/archive/v{{ version }}.tar.gz
-  sha256: fe71afb65d56e285a129bd55fe5b113c34cb04833db36b8337e2c59247e0351d
+  sha256: 13cb2416992bf51f9ae982002b8eb7beadc4b926320be7b7694b161a58a8f7af
 
 build:
   entry_points:
