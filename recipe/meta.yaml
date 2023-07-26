@@ -33,7 +33,7 @@ requirements:
     - numba >=0.54
     - numpy >=1.20
     - pillow >=7.0
-    - pydantic >=1.10
+    - pydantic >=1.10,<2.0
     - pymp-pypi >=0.4.5
     - pyproj >=3.2
     - rich >=12.0
