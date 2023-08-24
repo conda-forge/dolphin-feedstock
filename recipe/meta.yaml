@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/opera-adt/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 8f3a1ee705e6be7ab5b3eb823a036bf2b04054913ea6ae1c7e04649f39ad59d2
+  sha256: 22a407c090fff0dbbf23c58a3abdde0a4a9bcd417e4b08ee6e19ab0f6f7acdea
 
 build:
   entry_points:
@@ -26,15 +26,15 @@ requirements:
     - pip >=21.3
   run:
     - python >=3.8
+    - isce3 >=0.14.0
     - gdal >=3.3
     - h5py >=3.6
     - h5netcdf >=1.0
-    - hdf5 <1.12.2 # https://github.com/SciTools/iris/issues/5187 and https://github.com/pydata/xarray/issues/7549
-    - isce3 >=0.8.0
+    - hdf5 !=1.12.2 # https://github.com/SciTools/iris/issues/5187 and https://github.com/pydata/xarray/issues/7549
     - numba >=0.54
     - numpy >=1.20
     - pillow >=7.0
-    - pydantic >=1.10,<2
+    - pydantic >=2
     - pymp-pypi >=0.4.5
     - pyproj >=3.3
     - rich >=12.0
