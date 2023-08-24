@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/opera-adt/dolphin/archive/v{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 22a407c090fff0dbbf23c58a3abdde0a4a9bcd417e4b08ee6e19ab0f6f7acdea
 
 build:
   entry_points:
