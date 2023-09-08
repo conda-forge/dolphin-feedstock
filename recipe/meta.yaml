@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 7b69374e81c34bf6ef019dd00ba38cda842cad1e54779fa153ab6fa69197cc67
+  sha256: 18799ea6bf9afaefa4fe7f0bc6b47015faa6770043ee9e53932b4be2794cfc0a
 
 build:
   entry_points:
@@ -26,6 +26,7 @@ requirements:
     - pip >=21.3
   run:
     - python >=3.8
+    - isce3
     - gdal >=3.3
     - h5py >=3.6
     - hdf5 !=1.12.2 # https://github.com/SciTools/iris/issues/5187 and https://github.com/pydata/xarray/issues/7549
