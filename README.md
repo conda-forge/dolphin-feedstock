@@ -3,13 +3,13 @@ About dolphin-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dolphin-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/opera-adt/dolphin
+Home: https://github.com/isce-framework/dolphin
 
 Package license: BSD-3-Clause OR Apache-2.0
 
 Summary: Workflows for generating surface displacement maps using InSAR
 
-Development: https://github.com/opera-adt/dolphin
+Development: https://github.com/isce-framework/dolphin
 
 Documentation: https://dolphin-insar.readthedocs.io/
 
