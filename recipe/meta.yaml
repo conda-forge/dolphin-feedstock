@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 84f02f51a2fb1d16fc06ee2a814304c3c27b28f896445c8fb93b33a81dccba46
+  sha256: ed4206954de53ef4f23ab181c80b7c1fd1afab9aa4e0cb66e759f8e1c31a18c7
 
 build:
   entry_points:
@@ -16,7 +16,7 @@ build:
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
