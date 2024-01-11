@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 106cc8ffcf931d66f9ec8f4fc0bc6761c8dc16ee8d4f74f61854e2db179d369a
+  sha256: 15d490288865f1e617c023a6a40e723842334571de4ab14b6aecd17de3c14188
 
 build:
   entry_points:
@@ -36,6 +36,7 @@ requirements:
     - pydantic >=2
     - pymp-pypi >=0.4.5
     - pyproj >=3.3
+    - rasterio >=1.3
     - rich >=12.0
     - ruamel.yaml >=0.15
     - scipy >=1.5 # "scipy 0.16+ is required for linear algebra", numba. 1.5 is the oldest version that supports Python 3.7
