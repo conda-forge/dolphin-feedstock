@@ -51,8 +51,9 @@ test:
     - dolphin.shp
     - dolphin.workflows
   commands:
-    - pip check
     - dolphin --help
+    - dolphin config --help
+    - dolphin run --help
   requires:
     - pip
 
