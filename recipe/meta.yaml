@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 4a0c056a8dfab0171f3976a95786358c24fefd9f9f4ccd4e5cedd36472a989b4
+  sha256: a22500bb7ee8123dbedd289695f5ccdc4cb6c02cef454d20a1ffe45e05f0960a
 
 build:
   entry_points:
@@ -32,7 +32,7 @@ requirements:
     - hdf5 !=1.12.2 # https://github.com/SciTools/iris/issues/5187 and https://github.com/pydata/xarray/issues/7549
     - numba >=0.56
     - numpy >=1.23
-    - opera-utils >=0.1.5
+    - opera-utils >=0.7.0
     - pydantic >=2.1
     - pyproj >=3.3
     - rasterio >=1.3
