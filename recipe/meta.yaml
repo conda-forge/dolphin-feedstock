@@ -33,6 +33,7 @@ requirements:
     - numba >=0.56
     - numpy >=1.23
     - opera-utils >=0.7.0
+    - pandas >=2.0
     - pydantic >=2.1
     - pyproj >=3.3
     - rasterio >=1.3
