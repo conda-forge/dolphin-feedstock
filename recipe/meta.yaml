@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.22.0" %}
+{% set version = "0.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 5e38541acc5f02bf09d788bf4cb959898aac0b3c90332ac72f0f7bef2cef64f7
+  sha256: f8387fd904941824e5e5e593047182b080b16bd3dfb99f9788c502d02fa0c5c5
 
 build:
   entry_points:
@@ -33,7 +33,6 @@ requirements:
     - numba >=0.56
     - numpy >=1.23
     - opera-utils >=0.7.0
-    - pandas >=2.0
     - pydantic >=2.1
     - pyproj >=3.3
     - rasterio >=1.3
