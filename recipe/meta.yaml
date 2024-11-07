@@ -1,5 +1,6 @@
 {% set name = "dolphin" %}
 {% set version = "0.33.0" %}
+{% set python_min = 3.9 %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +21,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=64.0
     - setuptools-scm >=6.2
     - pip >=21.3
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - jax >=0.4.19
     - gdal >=3.5
     - h5py >=3.6
@@ -43,6 +44,9 @@ requirements:
     - tqdm >=4.60
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - dolphin
     - dolphin.io
@@ -53,8 +57,6 @@ test:
     - dolphin --help
     - dolphin config --help
     - dolphin run --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/isce-framework/dolphin
