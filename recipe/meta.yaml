@@ -1,6 +1,6 @@
 {% set name = "dolphin" %}
-{% set version = "0.35.1" %}
-{% set python_min = 3.9 %}
+{% set version = "0.36.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 01eee8752ac06f87a37ca1ee174480c669bd421e360f13c61ea3d74b29f1e529
+  sha256: f5a672c41ff85546e1026da47365a4b5714834459540ed70c90743905feed744
 
 build:
   entry_points:
