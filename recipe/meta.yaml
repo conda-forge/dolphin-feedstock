@@ -1,5 +1,5 @@
 {% set name = "dolphin" %}
-{% set version = "0.39.0" %}
+{% set version = "0.40.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/isce-framework/dolphin/archive/v{{ version }}.tar.gz
-  sha256: 44683aa311004771529b5c1ef693d37dd1f735e0959f3542dc37f233c83c5f88
+  sha256: dbfd19cdcf1cfeeb1b0bce04f1bf2b1c6d9eabc2b8d116a833ccfab8663824ba
 
 build:
   entry_points:
@@ -42,7 +42,7 @@ requirements:
     - snaphu >=0.4.0
     - threadpoolctl >=3.0
     - tqdm >=4.60
-    - tyro >=0.9.20
+    - tyro >=0.9.20,!=0.9.25
 
 test:
   requires:
