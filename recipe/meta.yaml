@@ -42,7 +42,7 @@ requirements:
     - snaphu >=0.4.0
     - threadpoolctl >=3.0
     - tqdm >=4.60
-    - tyro >=0.9.20
+    - tyro >=0.9.20,!=0.9.25
 
 test:
   requires:
